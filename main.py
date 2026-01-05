@@ -12,7 +12,7 @@ from common.opt import opts
 from common.utils import *
 from common.load_data_hm36 import Fusion
 from common.h36m_dataset import Human36mDataset
-from model.model import PoseSSM
+from model.model import TriadFormer
 from common.mpi_inf_3dhp_dataset import Mpi_inf_3dhp_Dataset
 from common.load_data_3dhp import Fusion_3dhp
 
@@ -133,7 +133,7 @@ if __name__ == '__main__':
         test_dataloader = torch.utils.data.DataLoader(test_data, batch_size=opt.batch_size,
                                                       shuffle=False, num_workers=int(opt.workers), pin_memory=True)
 
-    model = PoseSSM(opt).cuda()
+    model = TriadFormer(opt).cuda()
 
     if opt.reload:
         model_dict = model.state_dict()
