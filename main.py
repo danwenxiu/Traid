@@ -137,7 +137,7 @@ if __name__ == '__main__':
 
     if opt.reload:
         model_dict = model.state_dict()
-        model_path = sorted(glob.glob(os.path.join(opt.previous_dir, '*.pth')))[0]
+        model_path = sorted(glob.glob(os.path.join(opt.previous_dir, '*.pth')))[3]
         print(model_path)
         pre_dict = torch.load(model_path)
         pre_key = pre_dict.keys()
