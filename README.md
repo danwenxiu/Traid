@@ -2,6 +2,7 @@
 ## Dataset Setup
 We follow the standard protocol of the Human3.6M dataset for training and evaluation.
 Please download the processed dataset files from the official sources or provided links, and organize them as follows:
+
 ${POSE_ROOT}/
 ├── dataset/
 │   ├── data_3d_h36m.npz
@@ -21,11 +22,14 @@ pip install -r requirements.txt
 
 
 ## Test the model
+
 To test on Human3.6M with 2D poses detected by CPN as inputs, run:
+
 ```bash
 python main.py --reload --keypoints cpn_ft_h36m_dbb --previous_dir "ckpt/cpn"
 
 To test on Human3.6M with GT 2D poses as inputs, run:
+
 ```bash
 python main.py --reload --keypoints gt --previous_dir "ckpt/gt" 
 
