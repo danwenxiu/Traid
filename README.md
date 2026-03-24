@@ -8,22 +8,9 @@
 - Python 3.10.9  
 - PyTorch 1.12.1  
 
-### Install
 
 ```bash
 pip install -r requirements.txt
-
-
-
-## Test the model
-
-To test on Human3.6M with 2D poses detected by CPN as inputs, run:
-
-python main.py --reload --keypoints cpn_ft_h36m_dbb --previous_dir "ckpt/cpn"
-
-To test on Human3.6M with GT 2D poses as inputs, run:
-
-python main.py --reload --keypoints gt --previous_dir "ckpt/gt" 
 
 
 
