@@ -9,7 +9,6 @@
 - PyTorch 1.12.1  
 
 
-```bash
 pip install -r requirements.txt
 
 
