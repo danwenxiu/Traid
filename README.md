@@ -1,15 +1,15 @@
 # TriadFormer: Unifying State Space Modeling and Anatomical Transformers for Structured 3D Human Pose Estimation
 
+<img width="1128" height="784" alt="Fig6" src="https://github.com/user-attachments/assets/136ce0e6-99fd-4bef-8f04-d36de9c74c35" />
 
----
+
 
 ## ⚙️ Dependencies
 
 - Python 3.10.9  
 - PyTorch 1.12.1  
 
-```bash
-pip install -r requirements.txt
+
 
 
 Our code refers to the following repositories.
