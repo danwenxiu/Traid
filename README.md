@@ -8,9 +8,9 @@
 - Python 3.10.9  
 - PyTorch 1.12.1  
 
-
+```bash
 pip install -r requirements.txt
-
+---
 
 
 Our code refers to the following repositories.
